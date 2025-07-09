@@ -3,80 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ReelSaver - Download Instagram Reels</title>
+  <title>ReelSaver - Instagram Video Downloader</title>
+  <meta name="description" content="Download Instagram Reels, Videos, and Photos in HD without watermark." />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #e1306c 0%, #fd1d1d 100%);
-      color: #fff;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #333;
       text-align: center;
+    }
+
+    header {
+      background: #e1306c;
+      color: white;
       padding: 40px 20px;
     }
-    h1 {
-      font-size: 2.8em;
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
     }
-    input, button {
-      padding: 15px;
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 30px 20px;
+    }
+
+    input[type="text"] {
       width: 90%;
-      max-width: 480px;
-      margin: 10px 0;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-    }
-    button {
-      background: #fff;
-      color: #e1306c;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    #ad-space {
-      background: #fff;
-      color: #000;
-      margin: 30px auto;
       max-width: 500px;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
     }
+
+    button {
+      padding: 14px 30px;
+      background-color: #e1306c;
+      color: white;
+      font-weight: bold;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #c41c5d;
+    }
+
+    .info-box {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .info-box h2 {
+      color: #e1306c;
+    }
+
+    .info-box ol,
+    .info-box ul {
+      padding-left: 20px;
+    }
+
     footer {
-      font-size: 0.8em;
-      margin-top: 50px;
-      color: #eee;
+      background-color: #222;
+      color: #aaa;
+      padding: 20px;
+      font-size: 0.85rem;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>ReelSaver</h1>
-  <p>Paste your Instagram video URL</p>
-  <input type="text" id="urlInput" placeholder="https://www.instagram.com/reel/..." />
-  <button onclick="redirectToDownloader()">Download Now</button>
 
-  <div id="ad-space">
-    <strong>Advertisement:</strong>
-    <p>Thanks for supporting us!</p>
-  </div>
+  <header>
+    <h1>ReelSaver</h1>
+    <p>Download Instagram Reels, Videos & Photos in HD</p>
+  </header>
 
-  <footer>© 2025 ReelSaver | Redirect only.</footer>
+  <main>
+    <input type="text" id="urlInput" placeholder="Paste Instagram Reel or Video Link Here" />
+    <button onclick="startDownload()">Download Now</button>
+
+    <div class="info-box">
+      <h2>📥 How to Use ReelSaver</h2>
+      <ol>
+        <li>Copy the link of any Instagram reel/video/photo.</li>
+        <li>Paste it above and click "Download Now".</li>
+        <li>You will be redirected to a working secure download page.</li>
+      </ol>
+
+      <h2>✨ Why Use ReelSaver?</h2>
+      <ul>
+        <li>✅ 100% Free & Fast Downloader</li>
+        <li>✅ No Watermark, No Login Required</li>
+        <li>✅ Mobile Friendly & Secure</li>
+        <li>✅ Redirects to trusted downloaders like SnapInsta & SSS</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 ReelSaver | We do not host or store any Instagram content. This tool redirects users to trusted 3rd-party services.
+  </footer>
 
   <script>
-    function redirectToDownloader() {
-      const url = document.getElementById("urlInput").value.trim();
-      if (!url) {
-        alert("Please enter a valid Instagram link.");
+    function startDownload() {
+      const url = document.getElementById('urlInput').value.trim();
+      if (!url || !url.includes('instagram.com')) {
+        alert("⚠️ Please paste a valid Instagram URL.");
         return;
       }
-      window.open("https://otieu.com/4/9549105", "_blank");
+
+      const sss = 'https://sssinstagram.com/video-downloader?url=';
+      const snapinsta = 'https://snapinsta.app/instagram-reels-downloader?url=';
+
+      const win = window.open(sss + encodeURIComponent(url), '_blank');
       setTimeout(() => {
-        const sssUrl = "https://sssinstagram.com/video-downloader?url=" + encodeURIComponent(url);
-        window.open(sssUrl, "_blank");
-      }, 1000);
+        if (!win || win.closed) {
+          window.open(snapinsta + encodeURIComponent(url), '_blank');
+        }
+      }, 3000);
     }
   </script>
 
-  <!-- MultiTag -->
+  <!-- 💰 Monetag / Propeller Ads Scripts -->
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="156355" async data-cfasync="false"></script>
-
-  <!-- Push Notification -->
   <script src="//shoukigaigoors.net/ntfc.php?p=9549149" data-cfasync="false" async></script>
+
 </body>
 </html>
