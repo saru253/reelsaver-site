@@ -1,150 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ReelSaver - Instagram Video Downloader</title>
-  <meta name="description" content="Download Instagram Reels, Videos, and Photos in HD without watermark." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reelsaver - Instagram Video & Image Downloader</title>
+  <meta name="description" content="Download Instagram Reels, Videos, and Stories in HD for free. Reelsaver is a fast, clean, mobile-friendly Instagram downloader." />
+  
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
       color: #333;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-
-    header {
-      background: #e1306c;
-      color: white;
-      padding: 40px 20px;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
+    h1 {
       margin: 0;
+      font-size: 28px;
     }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    main {
-      padding: 30px 20px;
-    }
-
-    input[type="text"] {
-      width: 90%;
-      max-width: 500px;
-      padding: 14px;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin-bottom: 15px;
-    }
-
-    button {
-      padding: 14px 30px;
-      background-color: #e1306c;
-      color: white;
-      font-weight: bold;
-      border: none;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #c41c5d;
-    }
-
-    .info-box {
+    .container {
       max-width: 700px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-      text-align: left;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .info-box h2 {
-      color: #e1306c;
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
     }
-
-    .info-box ol,
-    .info-box ul {
+    button {
+      background: #007bff;
+      color: white;
+      padding: 12px 18px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .features, .tos {
+      margin-top: 30px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    ul {
       padding-left: 20px;
     }
-
     footer {
-      background-color: #222;
-      color: #aaa;
-      padding: 20px;
-      font-size: 0.85rem;
       margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background: #111;
+      color: white;
+      font-size: 14px;
+    }
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .disclaimer {
+      font-size: 13px;
+      color: #777;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>ReelSaver</h1>
-    <p>Download Instagram Reels, Videos & Photos in HD</p>
-  </header>
+<header>
+  <h1>Reelsaver - Instagram Downloader</h1>
+  <p>Download Reels, Photos, Videos & Stories Instantly</p>
+</header>
 
-  <main>
-    <input type="text" id="urlInput" placeholder="Paste Instagram Reel or Video Link Here" />
-    <button onclick="startDownload()">Download Now</button>
+<div class="container">
+  <input type="text" placeholder="Paste Instagram URL here..." id="instaLink">
+  <button onclick="downloadMedia()">Download</button>
 
-    <div class="info-box">
-      <h2>📥 How to Use ReelSaver</h2>
-      <ol>
-        <li>Copy the link of any Instagram reel/video/photo.</li>
-        <li>Paste it above and click "Download Now".</li>
-        <li>You will be redirected to a working secure download page.</li>
-      </ol>
+  <div class="disclaimer">
+    Reelsaver is developed to help users download and save their own posted content. Do not use this tool to violate privacy or copyright laws.
+  </div>
 
-      <h2>✨ Why Use ReelSaver?</h2>
-      <ul>
-        <li>✅ 100% Free & Fast Downloader</li>
-        <li>✅ No Watermark, No Login Required</li>
-        <li>✅ Mobile Friendly & Secure</li>
-        <li>✅ Redirects to trusted downloaders like SnapInsta & SSS</li>
-      </ul>
-    </div>
-  </main>
+  <div class="features">
+    <h2>Features of Reelsaver</h2>
+    <ul>
+      <li>Download Instagram Reels, Photos, Videos, and Stories in HD (1080p, 2K, 4K)</li>
+      <li>Supports downloading from private accounts (with user login)</li>
+      <li>Works on all platforms – PC, Android, iOS</li>
+      <li>No login required & completely anonymous</li>
+      <li>Fast, easy, and totally free</li>
+    </ul>
+  </div>
 
-  <footer>
-    © 2025 ReelSaver | We do not host or store any Instagram content. This tool redirects users to trusted 3rd-party services.
-  </footer>
+  <div class="tos">
+    <h2>Terms of Service</h2>
+    <p>Reelsaver is an independent platform not affiliated with Instagram or Meta. We use advertising to support non-commercial R&D activities. By continuing to use this website, you agree to our <a href="#">Terms of Service</a>.</p>
+    <p>If you do not agree, please discontinue use immediately.</p>
+  </div>
+</div>
 
-  <script>
-    function startDownload() {
-      const url = document.getElementById('urlInput').value.trim();
-      if (!url || !url.includes('instagram.com')) {
-        alert("⚠️ Please paste a valid Instagram URL.");
-        return;
-      }
+<footer>
+  &copy; 2025 Reelsaver. All rights reserved.
+</footer>
 
-      const sss = 'https://sssinstagram.com/video-downloader?url=';
-      const snapinsta = 'https://snapinsta.app/instagram-reels-downloader?url=';
+<!-- Redirect + Ad Scripts -->
+<script>
+function downloadMedia() {
+  const url = document.getElementById('instaLink').value.trim();
+  if (!url || !url.includes("instagram.com")) {
+    alert("Please enter a valid Instagram link.");
+    return;
+  }
 
-      const win = window.open(sss + encodeURIComponent(url), '_blank');
-      setTimeout(() => {
-        if (!win || win.closed) {
-          window.open(snapinsta + encodeURIComponent(url), '_blank');
-        }
-      }, 3000);
+  // Try sss first, fallback to Snapinsta
+  const sss = "https://sssinstagram.com/video-downloader?url=" + encodeURIComponent(url);
+  const snap = "https://snapinsta.app/instagram-reels-downloader?url=" + encodeURIComponent(url);
+
+  const win = window.open(sss, "_blank");
+
+  setTimeout(() => {
+    if (!win || win.closed || typeof win.closed == "undefined") {
+      window.open(snap, "_blank");
     }
-  </script>
+  }, 2500);
+}
+</script>
 
-  <!-- 💰 Monetag / Propeller Ads Scripts -->
-  <script src="https://fpyf8.com/88/tag.min.js" data-zone="156355" async data-cfasync="false"></script>
-  <script src="//shoukigaigoors.net/ntfc.php?p=9549149" data-cfasync="false" async></script>
+<!-- MultiTag (Monetag) Ad Script -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="156355" async data-cfasync="false"></script>
+
+<!-- Push Ads Fallback -->
+<script src="//shoukigaigoors.net/ntfc.php?p=9549149" data-cfasync="false" async></script>
 
 </body>
 </html>
