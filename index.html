@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReelSaver - Instagram Reels Downloader</title>
+  <meta name="description" content="Download Instagram Reels & Videos instantly. Safe and free.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+    }
+    h1 {
+      color: #E1306C;
+      font-size: 2.5em;
+    }
+    input, button {
+      padding: 12px;
+      width: 90%%;
+      max-width: 450px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    button {
+      background-color: #E1306C;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #ad-space {
+      margin-top: 40px;
+      padding: 20px;
+      background: #f4f4f4;
+      border: 2px dashed #ccc;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <h1>ReelSaver</h1>
+  <p>Paste Instagram Reel/Video Link Below:</p>
+
+  <input type="text" id="urlInput" placeholder="Paste your Instagram video URL" />
+  <button onclick="redirectToDownloader()">Download Now</button>
+
+  <div id="ad-space">
+    <p><strong>Advertisement:</strong></p>
+    <!-- 🔥 PropellerAds script will be placed here -->
+    <!-- Example:
+    <script data-cfasync="false" type="text/javascript" src="https://example.com/script.js"></script>
+    -->
+  </div>
+
+  <footer>© 2025 ReelSaver | We do not host or store any video content. Redirect only.</footer>
+
+  <script>
+    function redirectToDownloader() {
+      const url = document.getElementById("urlInput").value.trim();
+      if (!url) {
+        alert("Please enter a valid Instagram link.");
+        return;
+      }
+      const redirectLink = "https://sssinstagram.com/video-downloader?url=" + encodeURIComponent(url);
+      window.open(redirectLink, "_blank");
+    }
+  </script>
+
+  <!-- ✅ Example PropellerAds Popunder script -->
+  <!-- Replace YOUR-ID with your real script -->
+  <script data-cfasync="false" type="text/javascript" src="https://upgulpinon.com/1?z=YOUR-ID"></script>
+</body>
+</html>
