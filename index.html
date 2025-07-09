@@ -1,203 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Instagram Video Downloader - Reelsaver</title>
-<meta name="description" content="Download Instagram Reels, Videos, Photos and Stories in HD with Reelsaver. Fast, Free, No Login. 100% Safe Instagram downloader tool.">
-<meta name="keywords" content="Instagram video downloader, download reels, Instagram photo download, save Instagram videos, insta download, Reelsaver">
-<meta name="robots" content="index, follow">
-
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Reelsaver - Instagram Downloader</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #9b59b6;
-      color: #fff;
-    }
-
-    header {
-      background-color: #fff;
-      color: #9b59b6;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .main-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 80px 20px 40px;
-    }
-
-    .main-section h2 {
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .main-section p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-
-    .input-box {
-      margin-top: 30px;
-      display: flex;
-      max-width: 800px;
-      width: 100%;
-      background: #fff;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-
-    .input-box input {
-      flex: 1;
-      padding: 15px;
-      border: none;
-      font-size: 16px;
-      color: #333;
-    }
-
-    .input-box button {
-      padding: 0 20px;
-      background: #eee;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      color: #333;
-      border-left: 1px solid #ccc;
-    }
-
-    .download-button {
-      background-color: #00c853;
-      color: white;
-      font-weight: bold;
-      padding: 0 25px;
-      border-left: 1px solid #00c853;
-    }
-
-    .info-section {
-      max-width: 900px;
-      margin: 60px auto;
-      background: #fff;
-      color: #333;
-      border-radius: 8px;
-      padding: 30px;
-      font-family: sans-serif;
-    }
-
-    .info-section h2, .info-section h3 {
-      color: #9b59b6;
-    }
-
-    .info-section ul, .info-section ol {
-      margin-left: 20px;
-    }
-
-    .info-section p, .info-section li {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #ccc;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reelsaver - Instagram Video Downloader</title>
+  <meta name="description" content="Download Instagram Reels, Videos, Photos and Stories in HD. Fast, secure and free with Reelsaver - the best Instagram downloader.">
+  <meta name="keywords" content="Instagram downloader, download reels, Instagram video downloader, Insta download, reelsaver, free Instagram download tool">
+  <meta name="robots" content="index, follow" />
 </head>
 <body>
+  <center>
+    <h1>Instagram Downloader</h1>
+    <p>Paste your Instagram reel/photo/video link below:</p>
+    <input type="text" id="linkInput" placeholder="Paste Instagram link here" style="width:300px; padding:10px;" />
+    <br/><br/>
+    <button onclick="download()">Download Now</button>
+  </center>
 
-  <header>
-    <h1>Reelsaver</h1>
-    <nav>
-      <a href="#" style="color:#9b59b6; text-decoration:none; font-weight:bold;">Instagram Downloader</a>
-    </nav>
-  </header>
+  <br/><br/>
+  <hr style="max-width:600px; margin:auto;" />
 
-  <section class="main-section">
-    <h2>Instagram Photo, Video Downloader</h2>
-    <p>Download Photos, Videos, Reels, Stories and Profile from Instagram</p>
-
-    <div class="input-box">
-      <input type="text" id="instaLink" placeholder="Paste URL Instagram">
-      <button onclick="pasteLink()">📋 Paste</button>
-      <button class="download-button" onclick="downloadMedia()">Download</button>
-    </div>
-  </section>
-
-  <section class="info-section">
-    <h2>📄 Our Policy & Terms</h2>
+  <div style="max-width:700px; margin:auto; padding:20px; font-family:sans-serif;">
+    <h2>About Reelsaver</h2>
     <p>
-      Our tool was developed to help users download videos and images posted by themselves.
-      However, we will refuse to provide services if you abuse the tool to violate the privacy
-      rights or intellectual property rights of others.
+      Reelsaver is an online tool to help Instagram users download Reels, Videos, Photos, and Stories in HD quality (1080p, 2K, 4K). 
+      You don’t need to login, and all downloads are anonymous. Works great on PC, iPhone, Android.
     </p>
-    <ol>
-      <li><strong>Reelsaver</strong> is an independent platform, developed and maintained by our team.
-        <strong>WE ARE NOT AFFILIATED WITH INSTAGRAM OR META.</strong></li>
-      <li>The Reelsaver™ trademark is created solely for use in connection with the services and site we provide.</li>
-      <li>We display advertising to support our non-commercial development efforts. Advertisers may use cookies.</li>
-    </ol>
     <p>
-      By continuing to use this site, you agree to our Terms of Service and Privacy Policy. If you do not agree,
-      please exit immediately.
+      <strong>Disclaimer:</strong> Reelsaver is not affiliated with Instagram or Meta. This tool is for personal use only. Do not download content that violates copyright or privacy laws.
     </p>
-
-    <h2>📌 Instagram Downloader - Tool to download videos and photos</h2>
-    <p><strong>Reelsaver</strong> is an online Instagram downloader. You can easily save photos, videos, reels,
-      stories and profiles to your device without installing anything.</p>
-
-    <ul>
-      <li>Works on Android, iPhone, Windows, Mac</li>
-      <li>No login needed. Completely anonymous</li>
-      <li>Supports private account download (if user is logged in)</li>
-      <li>Save in HD (1080p, 2k, 4k) – no quality loss</li>
-    </ul>
-
-    <h3>How to Use:</h3>
-    <ol>
-      <li>Copy the Instagram URL of any photo, video, reel, or story</li>
-      <li>Paste it above and click “Download”</li>
-      <li>Wait for the system to process and download instantly</li>
-    </ol>
-
-    <p style="margin-top: 30px; font-size: 13px; color: #888;">
-      ⚠ Reelsaver does not store any video or image. All downloads are done directly by redirecting to a third-party service.
-    </p>
-  </section>
-
- <footer>
-  &copy; 2025 Reelsaver. All rights reserved.  
-  <br>
-  <span style="font-size: 13px; color: #ccc;">By: Sarthak Shinde</span>
-</footer>
+    <p style="color:#555; font-size:13px;">Built with ❤️ by Sarthak Shinde</p>
+  </div>
 
   <script>
-    function pasteLink() {
-      navigator.clipboard.readText().then(text => {
-        document.getElementById("instaLink").value = text;
-      });
-    }
-
-    function downloadMedia() {
-      const url = document.getElementById("instaLink").value.trim();
-      if (!url) {
-        alert("Please enter an Instagram link.");
-        return;
-      }
-      window.open("https://snapinsta.to/?url=" + encodeURIComponent(url), "_blank");
+    function download() {
+      const link = document.getElementById('linkInput').value.trim();
+      if (!link) return alert("Please paste a link.");
+      window.open("https://snapinsta.to/?url=" + encodeURIComponent(link), "_blank");
     }
   </script>
 </body>
