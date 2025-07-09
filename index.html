@@ -1,62 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ReelSaver - Instagram Reels Downloader</title>
-  <meta name="description" content="Download Instagram Reels & Videos instantly. Safe and free.">
+  <title>ReelSaver - Download Instagram Reels</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e1306c 0%, #fd1d1d 100%);
+      color: #fff;
       text-align: center;
       padding: 40px 20px;
-      background: #fff;
     }
     h1 {
-      color: #E1306C;
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
     input, button {
-      padding: 12px;
+      padding: 15px;
       width: 90%;
-      max-width: 450px;
+      max-width: 480px;
       margin: 10px 0;
       font-size: 16px;
+      border: none;
+      border-radius: 8px;
     }
     button {
-      background-color: #E1306C;
-      color: white;
-      border: none;
-      border-radius: 6px;
+      background: #fff;
+      color: #e1306c;
+      font-weight: bold;
       cursor: pointer;
     }
     #ad-space {
-      margin-top: 40px;
+      background: #fff;
+      color: #000;
+      margin: 30px auto;
+      max-width: 500px;
       padding: 20px;
-      background: #f4f4f4;
-      border: 2px dashed #ccc;
+      border-radius: 10px;
     }
     footer {
-      margin-top: 60px;
-      font-size: 13px;
-      color: #999;
+      font-size: 0.8em;
+      margin-top: 50px;
+      color: #eee;
     }
   </style>
 </head>
 <body>
   <h1>ReelSaver</h1>
-  <p>Paste Instagram Reel/Video Link Below:</p>
-
-  <input type="text" id="urlInput" placeholder="Paste your Instagram video URL" />
+  <p>Paste your Instagram video URL</p>
+  <input type="text" id="urlInput" placeholder="https://www.instagram.com/reel/..." />
   <button onclick="redirectToDownloader()">Download Now</button>
 
   <div id="ad-space">
-    <p><strong>Advertisement:</strong></p>
-    <!-- Monetag direct link being used -->
+    <strong>Advertisement:</strong>
+    <p>Thanks for supporting us!</p>
   </div>
 
-  <footer>© 2025 ReelSaver | We do not host or store any video content. Redirect only.</footer>
+  <footer>© 2025 ReelSaver | Redirect only.</footer>
 
   <script>
     function redirectToDownloader() {
@@ -65,9 +65,18 @@
         alert("Please enter a valid Instagram link.");
         return;
       }
-      const redirectLink = "https://otieu.com/4/9549105?url=" + encodeURIComponent(url);
-      window.open(redirectLink, "_blank");
+      window.open("https://otieu.com/4/9549105", "_blank");
+      setTimeout(() => {
+        const sssUrl = "https://sssinstagram.com/video-downloader?url=" + encodeURIComponent(url);
+        window.open(sssUrl, "_blank");
+      }, 1000);
     }
   </script>
+
+  <!-- MultiTag -->
+  <script src="https://fpyf8.com/88/tag.min.js" data-zone="156355" async data-cfasync="false"></script>
+
+  <!-- Push Notification -->
+  <script src="//shoukigaigoors.net/ntfc.php?p=9549149" data-cfasync="false" async></script>
 </body>
 </html>
